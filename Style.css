@@ -1,0 +1,46 @@
+body {
+    font-family:arial;
+}
+  
+header:before {
+    background-image:url("https://i.pinimg.com/originals/17/47/aa/1747aa9dfea8914dafca8aa5b9f26b83.png");
+    background-size:300px;
+    bottom: 0;
+    content:"";
+    filter: blur(3px);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;   
+}
+  
+.menu {
+    background-color: white;
+}
+  
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+.menu li{
+    list-style: none;
+}
+  
+.site-title, .site-subtitle {
+    text-align:center;
+    color: whitesmoke;
+}
+  
+.site-subtitle {
+    font-style: italic;
+}
