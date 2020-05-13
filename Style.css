@@ -6,11 +6,37 @@
 
 body {
     font-family:arial;
+    font-size: 12px;
+}
+
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body{
+        font-size: 22px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 header:before {
-    background-image:url("https://i.pinimg.com/originals/17/47/aa/1747aa9dfea8914dafca8aa5b9f26b83.png");
-    background-size:300px;
+    background-image:url("./img/painting.png");
+    background-size:305px;
     bottom: 0;
     content:"";
     filter: blur(3px);
@@ -23,13 +49,25 @@ header:before {
   
 .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
   
 .menu ul {
     display: flex;
     justify-content: space-around;
 }
-  
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+}
+
 a {
     text-decoration: none;
 }
@@ -37,11 +75,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-  
-.menu li{
-    list-style: none;
-}
-  
+
 .site-title, .site-subtitle {
     text-align:center;
     color: whitesmoke;
@@ -49,4 +83,13 @@ a:hover {
   
 .site-subtitle {
     font-style: italic;
+}
+
+.site-title {
+    font-size: 4em;
+}
+
+.img-portfolio {
+    width: 180px;
+    height: 180px;
 }
