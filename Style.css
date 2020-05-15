@@ -29,6 +29,13 @@ body {
         font-size: 22px;
     }
 }
+
+@media (orientation: landscape) {
+    header:before {
+        background-position: center;
+    }
+}
+
 @media (min-width: 793px) {
     header:before {
         background-position: center;
@@ -70,6 +77,7 @@ header:before {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 2;
 }
   
 .menu ul {
@@ -109,12 +117,12 @@ a:hover {
     font-family: 'VT323', monospace;
 }
 
-.portfolio {
+.contato, .portfolio {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.portfolio h2 {
+.contato, .portfolio h2 {
     font-family: 'VT323', monospace;
     font-size: 3em;
     margin-bottom: 1.3em;
@@ -151,6 +159,12 @@ justify-content: center;
     width: 240px;
     height: 180px;
     object-fit: cover;
+    transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+    transform: scale(2);
+    z-index: 1;
 }
 
 /*
